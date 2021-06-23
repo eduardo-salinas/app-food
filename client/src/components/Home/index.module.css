@@ -1,0 +1,25 @@
+body{
+    background-color: #f6e5e9;
+}
+.recipes {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 100px 20px 80px 20px; 
+}
+
+.notFound{
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    color: #FFF; 
+}
+
+.notFound button{
+    margin-top: 150px;
+    height: 80px;
+}

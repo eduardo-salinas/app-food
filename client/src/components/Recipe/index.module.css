@@ -1,0 +1,50 @@
+
+.recipe{
+    display: table;
+    list-style: none;
+    background: #AF2D2D;    
+    border-radius: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-shadow: 0 8px 10px #214252, 1px -2px 1px #214252;
+    color: #f6e5e9;
+    margin: 15px;
+    width: 300px;
+    opacity: 95%;
+    border:solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5);
+    padding-bottom: 8px;
+}
+.link{
+    text-shadow: 0 8px 10px #214252, 1px -2px 1px #214252;
+    color: #f6e5e9;
+    text-decoration: none;
+}
+.link:hover{
+    opacity: 0.8;
+    color: #CE6262;
+}
+.title{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100px;
+ text-decoration: none;
+ font-size: 35px;
+ padding: 10px 10px 1px 10px;
+}
+
+.recipe img {
+    margin: 20px 0px 0px 0px;
+    width: 320px;   
+    height: 250px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100px;
+    font-size: 20px;
+    padding: 1px 5px 10px 5px;
+}

@@ -1,0 +1,27 @@
+.dietsTypes{
+    display:flex;
+    flex-direction: column;
+   background-color: transparent;
+    margin: 100px 0px 40px 5px;
+    
+}
+
+.diet{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    background-color: #AF2D2D;
+    opacity: 90%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-shadow: 0 8px 10px #231e23, 1px -2px 1px #231e23;
+    color: #f6e5e9;
+    font-size: 25px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    color: #f6e5e9; 
+    border-radius: 5px;
+    border:solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 14px 80px rgba(0, 0, 0, 0.5);
+    padding: 0px 5px 20px 5px;
+    margin-bottom: 15px;
+}

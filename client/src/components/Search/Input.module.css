@@ -1,0 +1,31 @@
+.input{
+    display: flex;
+    flex-direction: row;
+}
+
+.input button{
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #f6e5e9;
+        color: #214252;
+        font-size: 17px;
+        border: 1px solid #214252;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;   
+        border-radius: 2px;
+    }
+.input button:hover{
+    opacity: 0.7;
+        background-color: #CE6262;
+        cursor:pointer;
+    }
+.input input{
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid #214252;
+        float: left;
+        width: 80%;
+        background: #FFF;
+        border-radius: 2px;
+    }

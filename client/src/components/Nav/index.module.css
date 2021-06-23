@@ -1,0 +1,37 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  background-color: #AF2D2D;
+  position: fixed;
+  z-index:20;
+  width: auto;
+  padding: 0px 10px 0px 10px;
+  top:0px;
+  left:0px;
+  right: 0px;
+  list-style: none;  
+  border:solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5);
+}
+
+.cooking{
+  width: 70px;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-shadow: 0 8px 10px #231e23, 1px -2px 1px #231e23;
+    color: #f6e5e9;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+.link:hover{
+    font-size: 28px;
+    opacity: 0.8;
+    color: #AAAAAA;
+}

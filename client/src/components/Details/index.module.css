@@ -1,0 +1,40 @@
+.recipe{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: #AF2D2D;
+    opacity: 90%;
+    margin: 100px 0px 0px 25%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-shadow: 0 8px 10px #231e23, 1px -2px 1px #231e23;
+    color: #f6e5e9;
+    font-size: 25px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    color: #FDFDFD; 
+    border-radius: 5px;
+    border:solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.5);
+    list-style: none;
+}
+
+.recipe h1{
+ margin: 10px 10px 10px 10px;
+ height: 100px;
+}
+
+.recipe img {
+    margin: 20px 0px 0px 0px;
+    width: auto;   
+    height: 500px;
+    border:solid rgba(0, 0, 0, 0.2);
+}
+
+.score {
+    height: 100px;
+    margin: 20px 0px 0px 0px;
+}
+.info{
+    padding: 20px 30px 30px 30px
+}
