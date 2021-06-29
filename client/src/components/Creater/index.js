@@ -6,6 +6,7 @@ import style from './index.module.css';
 import SelectDiet from './SelectDiet';
 import RecipeDates from './RecipeDates';
 import { validate } from './validate';
+import swal from 'sweetalert';
 
 
 export const Creater = () => {
@@ -32,12 +33,23 @@ export const Creater = () => {
     const handleSubmit = (e) => {
         setError(validate(recipe));
         e.preventDefault();
-        let check=validate(recipe);
+        let check = validate(recipe);
         if (check.hasOwnProperty("title") || check.hasOwnProperty("summary") || check.hasOwnProperty("score") || check.hasOwnProperty("healthScore")) {
-            alert("the data is wrong")
+            swal({
+                title: "Error",
+                text: "Incorrect data, please try again!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
         } else {
             dispatch(addRecipe(recipe));
-            alert("successfully added");
+            swal({
+                title: "Good job!",
+                text: "Successfully added!",
+                icon: "success",
+                button: "Confirm",
+              });
             setRecipe({
                 title: "",
                 summary: "",

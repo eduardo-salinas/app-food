@@ -5,7 +5,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 export const Loading = () => {
     return (
         <div className={style.loading}>
-            <h1> LOADING <BeatLoader size={20}/></h1>
+            <h1> LOADING <BeatLoader size={30}/></h1>
         </div>
     );
 };
