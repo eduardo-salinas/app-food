@@ -1,4 +1,4 @@
-export const GET_URL = "http://localhost:3001/"
+export const GET_URL = "https://app-food1.herokuapp.com/"
 
 export const GET_RECIPES_ALL = 'GET_RECIPES_ALL';
 export const GET_RECIPES_FOR_NAME = 'GET_RECIPES_FOR_NAME';

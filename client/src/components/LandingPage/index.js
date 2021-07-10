@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './index.module.css'
 
-export function LandingPage() {
+const LandingPage = () => {
     return (
         <div className={style.page}>
             <div className={style.landing}>
@@ -10,10 +10,10 @@ export function LandingPage() {
                 <br />
                 <p >
                     Welcome ! Find the best recipes according to your preferences or diet, add your favorite recipes and to share them with everyone!
-               </p>
+                </p>
             </div >
             <Link to='/food/home' >
-                <a className={style.btn}>
+                <a className={style.btn} href="/">
                     <div>
                         <span></span>
                     </div>

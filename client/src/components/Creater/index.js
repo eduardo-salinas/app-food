@@ -9,7 +9,7 @@ import { validate } from './validate';
 import swal from 'sweetalert';
 
 
-export const Creater = () => {
+const Creater = () => {
 
     const [error, setError] = useState({});
     const [diets, setDiets] = useState({

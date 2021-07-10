@@ -7,7 +7,7 @@ import Paginater from '../Paginater';
 import Recipe from '../Recipe';
 import style from './index.module.css';
 
-export const Home = () => {
+const Home = () => {
     const dispatch = useDispatch();
     const store = useSelector(state => state)
     const [pag, setPag] = useState(1)
@@ -17,7 +17,7 @@ export const Home = () => {
 
     useEffect(() => {
         dispatch(getRecipesAll());
-    }, []);
+    }, [dispatch]);
 
 
     useEffect(() => {

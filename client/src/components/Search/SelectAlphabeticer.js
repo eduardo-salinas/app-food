@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { filtredForNameHihgToLow, filtredForNameLowToHigh } from '../../actions';
 import style from './Select.module.css';
 
-export const SelectAlphabeticer = () => {
+const SelectAlphabeticer = () => {
 
     const dispatch = useDispatch();
 

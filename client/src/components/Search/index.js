@@ -6,7 +6,7 @@ import SelectScore from './SelectScore';
 import SelectScoreHealth from './SelectScoreHealth';
 import style from './Select.module.css';
 
-export const Search = () => {
+const Search = () => {
 
     return (
         <>

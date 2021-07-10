@@ -2,7 +2,7 @@ import React from 'react';
 import style from './RecipeDates.module.css';
 import { validate } from './validate';
 
-export const RecipeDates = ({ setRecipe, setError, recipe, error }) => {
+const RecipeDates = ({ setRecipe, setError, recipe, error }) => {
 
     const onChange = (e) => {
         setError(validate({

@@ -1,19 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRecipesDetail } from '../../actions/requests';
 import style from './index.module.css';
 import notfound from '../../assets/notfound.png'
 import Loading from '../Loading';
 
-export function Details({ match }) {
+const Details=({ match }) => {
 
     const dispatch = useDispatch();
     const store = useSelector(state => state.recipes[0])
     const loading = useSelector(state => state.loading);
+    const fixed = useRef(match.params.id);
+
 
     useEffect(() => {
-        dispatch(getRecipesDetail(match.params.id));
-    }, []);
+        dispatch(getRecipesDetail(fixed.current));
+    }, [dispatch]);
 
     if (store) {
         return (

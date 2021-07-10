@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { filtredForScoreHealthHighToLow, filtredForScoreHealthLowToHigh } from '../../actions';
 import style from './Select.module.css';
 
-export const SelectScoreHealth = () => {
+const SelectScoreHealth = () => {
 
     const dispatch = useDispatch();
 

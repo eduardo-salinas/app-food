@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './index.module.css';
-import { GrCaretNext,GrCaretPrevious,GrChapterNext,GrChapterPrevious } from "react-icons/gr";
+import { GrCaretNext, GrCaretPrevious, GrChapterNext, GrChapterPrevious } from "react-icons/gr";
 
-export function Paginater({pag,setPag,max}) {
-    
+const Paginater = ({ pag, setPag, max }) => {
+
     return (
         <div className={style.paginater} >
             <button type="button" onClick={() => setPag(1)}><GrChapterPrevious /></button>

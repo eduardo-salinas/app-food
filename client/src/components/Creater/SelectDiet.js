@@ -4,13 +4,13 @@ import { getDietTypes } from '../../actions/requests';
 import style from './SelectDiet.module.css';
 import { validateDiet } from './validate';
 
-export const SelectDiet = ({ diets, setDiets, setRecipe, setError, recipe, error }) => {
+const SelectDiet = ({ diets, setDiets, setRecipe, setError, recipe, error }) => {
     const dispatch = useDispatch();
     const store = useSelector(state => state);
 
     useEffect(() => {
         dispatch(getDietTypes());
-    }, []);
+    }, [dispatch]);
 
     const componentVerific = () => {
         diets.component ? setDiets

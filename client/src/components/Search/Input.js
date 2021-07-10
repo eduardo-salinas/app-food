@@ -4,7 +4,7 @@ import { getRecipesForName } from '../../actions/requests';
 import { HiOutlineSearch } from 'react-icons/hi'
 import style from './Input.module.css';
 
-export const Input = () => {
+const Input = () => {
     const [recipe, setRecipe] = useState("");
 
     const dispatch = useDispatch();

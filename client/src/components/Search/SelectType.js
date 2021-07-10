@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getDietTypes, getRecipesAll, getRecipesForDiet } from '../../actions';
 import style from './Select.module.css';
 
-export const SelectType = () => {
+const SelectType = () => {
 
     const dispatch = useDispatch();
     const store = useSelector(state => state);
@@ -11,7 +11,7 @@ export const SelectType = () => {
 
     useEffect(() => {
         dispatch(getDietTypes());
-    }, []);
+    }, [dispatch]);
 
 
     const handleChange = (e) => {

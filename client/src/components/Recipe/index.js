@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import notfound from '../../assets/notfound.png'
 import { BsStarFill, BsHeartFill, BsHeartHalf, BsHeart, BsStarHalf, BsStar } from 'react-icons/bs'
 
-export const Recipe = ({ id, title, score, healthScore, img, diets }) => {
+const Recipe = ({ id, title, score, healthScore, img, diets }) => {
     let scoreStar = [];
     let scoreHeart = [];
     let scoreStarTotal = [];
     let scoreHeartTotal = [];
-    let totalStar = (10 - Math.floor(score / 10)) - (score % 10 > 0 ? 1 : 0)
+    let totalStar = (10 - Math.floor(score / 10)) - (score % 10 > 0 ? 1 : 0);
     let totalHeart = (10 - Math.floor(healthScore / 10)) - ((healthScore % 10 > 0) ? 1 : 0);
     for (let i = 0; i < Math.floor(score / 10); i++) {
         scoreStar.push(i);

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import style from './index.module.css';
 import cooking from '../../assets/cooking.png'
 
-export function Nav() {
+const Nav = () => {
   return (
     <div className={style.nav}>
       <Link className={style.link} to='/food/home'>
-        <img className={style.cooking} src={cooking} />
+        <img className={style.cooking} src={cooking} alt="not found" />
         <span>
           Food App
         </span>
