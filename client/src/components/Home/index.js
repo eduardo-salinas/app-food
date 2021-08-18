@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRecipesAll } from '../../actions/requests';
 import { paginater } from '../../reducer/utils';
+import Filtrer from '../Filtrer';
 import Loading from '../Loading';
 import Paginater from '../Paginater';
 import Recipe from '../Recipe';
@@ -26,6 +27,7 @@ const Home = () => {
 
     return (
         <>
+            <Filtrer />
             {store.loading ? <Loading /> :
                 (
                     <div className={style.recipes}>

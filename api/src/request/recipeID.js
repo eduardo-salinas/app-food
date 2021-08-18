@@ -3,7 +3,6 @@ require('dotenv').config();
 const axios = require('axios').default;
 const { API_KEY } = process.env;
 
-//! con esta funcion capturamos los detalles especificos de una receta por id
 
 const recipeId = async (id) => {
     try {

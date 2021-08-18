@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import notfound from '../../assets/notfound.png'
 import { BsStarFill, BsHeartFill, BsHeartHalf, BsHeart, BsStarHalf, BsStar } from 'react-icons/bs'
 
-const Recipe = ({ id, title, score, healthScore, img, diets }) => {
+const Recipe = ({ id, title, score, healthScore, img}) => {
     let scoreStar = [];
     let scoreHeart = [];
     let scoreStarTotal = [];
@@ -27,8 +27,8 @@ const Recipe = ({ id, title, score, healthScore, img, diets }) => {
     return (
         <Link className={style.link} to={`/food/recipe/${id}`}>
             <div className={style.recipe}>
-                <h1 className={style.title}>{title}</h1>
                 {img ? <img src={img} alt="not found" /> : <img src={notfound} alt="not found" />}
+                <h1 className={style.title}>{title}</h1>
                 <div className={style.score}>
                     <div className={style.star}>
                         {scoreStar.map(e => <BsStarFill />)}
@@ -41,11 +41,7 @@ const Recipe = ({ id, title, score, healthScore, img, diets }) => {
                         {(healthScore % 10 > 0) && <BsHeartHalf />}
                         {scoreHeartTotal.map(e => <BsHeart />)}
                         <p className={style.heartp}>Health Score: {healthScore}</p>
-                    </div>
-                    <li>Diet Types:
-                        {diets && diets.map(d => <text> {d},</text>
-                        )}
-                    </li>
+                    </div>                    
                 </div>
             </div>
         </Link>
