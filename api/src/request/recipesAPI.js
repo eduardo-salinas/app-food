@@ -15,7 +15,6 @@ const recipesApi = async function () {
         case 5: apiKey = API_KEY5;
         default: apiKey = API_KEY1;
     }
-    console.log("************************",index,"*****",apiKey);
     try {
         const res = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&addRecipeInformation=true&number=100`)
         const recipes = res.data.results;
@@ -24,10 +23,10 @@ const recipesApi = async function () {
             return {
                 id: r.id,
                 title: r.title,
-                score: r.spoonacularScore,      //puntaje           //
-                healthScore: r.healthScore,     //puntaje de salud //-->number
+                score: r.spoonacularScore,      
+                healthScore: r.healthScore,     
                 img: r.image,
-                diets: r.diets,                 //array
+                diets: r.diets,                 
             };
         });
 

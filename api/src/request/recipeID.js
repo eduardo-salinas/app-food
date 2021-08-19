@@ -6,19 +6,18 @@ const { API_KEY } = process.env;
 
 const recipeId = async (id) => {
     try {
-
         const recipe = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`);
         const r = recipe.data;
         const recipeId = {
             id: r.id,
             title: r.title,
-            score: r.spoonacularScore,      //puntaje           //
-            healthScore: r.healthScore,     //puntaje de salud //-->number
-            dishTypes: r.dishTypes,      //tiempo de cocion //
+            score: r.spoonacularScore,     
+            healthScore: r.healthScore,     
+            dishTypes: r.dishTypes,      
             img: r.image,
             summary: r.summary,
             instructions: r.instructions,
-            diets: r.diets                   //array           
+            diets: r.diets                          
         };
         return recipeId;
 

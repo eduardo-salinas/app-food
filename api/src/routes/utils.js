@@ -17,6 +17,7 @@ const searchForName = async (value) => {
 
 const searchForId = async (id) => {
     const searchId = await recipeId(id);
+    console.log("00000000000000000000   ",searchId)
     if (searchId) return searchId
     const db = await recipesDb();
     const searchDB= db.find(recipe=>recipe.id===id)

@@ -26,7 +26,7 @@ router.get('/recipes', async (req, res) => {
 router.get('/recipes/:id', async (req, res) => {
     const { id } = req.params;
     const recipeInfo = await searchForId(id);
-    
+    console.log("00000000000000000000   ",recipeInfo, id)
     if (recipeInfo) return res.json(recipeInfo);
     
     return res.status(404).json({ msg: "We're so sorry, id is not valid" })
