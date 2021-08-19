@@ -20,11 +20,11 @@ Otro de los requisitos era no poder usar ninguna libreria ni frameword relaciona
 ## Previews 🍝
 
 <p align='left'>
-    <img src='./images/landingpage.png' </img>
+    <img src='./images/landingpage.jpg' </img>
 </p>
 <p align='left'>
-    <img src='./images/home.png' </img>
+    <img src='./images/home.jpg' </img>
 </p>
 <p align='left'>
-    <img src='./images/form.png' </img>
+    <img src='./images/form.jpg' </img>
 </p>
